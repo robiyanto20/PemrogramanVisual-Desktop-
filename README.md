@@ -23,7 +23,13 @@ Sebelum memulai proyek, pastikan Anda memiliki perangkat lunak berikut terpasang
 2. Buka file `src/config/DatabaseConfig.java`.
 3. Sesuaikan informasi koneksi database seperti URL, nama pengguna, dan kata sandi.
 
-## STRUKTUR PROJEK
+
+```java
+public class DatabaseConfig {
+    public static final String URL = "jdbc:mysql://localhost:3306/nama_database";
+    public static final String USERNAME = "nama_pengguna";
+    public static final String PASSWORD = "kata_sandi";
+}
 
 |-- src
 |   |-- config
@@ -38,11 +44,3 @@ Sebelum memulai proyek, pastikan Anda memiliki perangkat lunak berikut terpasang
 |-- database
 |   |-- your_entity_schema.sql
 |-- README.md
-
-
-```java
-public class DatabaseConfig {
-    public static final String URL = "jdbc:mysql://localhost:3306/nama_database";
-    public static final String USERNAME = "nama_pengguna";
-    public static final String PASSWORD = "kata_sandi";
-}
